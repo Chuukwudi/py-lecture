@@ -50,6 +50,3 @@ def act5():
             coin_bol.append(True)
 
 
-
-
-
