@@ -37,7 +37,9 @@ if punk_ipa_request.status_code == requests.codes.ok:
 
 # params = {"key1":"value1", "key2":"value2"}
 beers = None
-payload = {"abv_gt": 5, "brewed_after": "12-2015"}
+payloadd = {"abv_gt": 5, "brewed_after": "12-2015"}
+payloadw = {'abv_gt': 5, 'brewed_after': '12-2015'}
+payload = {"food": "rice"}
 beers_request = requests.get("https://api.punkapi.com/v2/beers", params=payload)
 
 # Print the status code
@@ -48,4 +50,4 @@ if beers_request.status_code == requests.codes.ok:
     print(beers_request.json())
     beers = beers_request.json()
     for beer in beers:
-        print(beer["id"], beer["name"], beer["first_brewed"])
+        print(beer["id"], beer["name"], beer["first_brewed"], beer["food_pairing"])
