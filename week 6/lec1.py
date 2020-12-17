@@ -4,7 +4,7 @@ from random import randint
 # Load CSV file
 df = pd.read_csv("data.csv")
 
-# Loop throw and add up!
+# Loop through and add up!
 '''
 total = 0
 rows = 0 # Track my row count
