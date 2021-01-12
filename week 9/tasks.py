@@ -40,7 +40,7 @@ def pok():
                 raise Exception("Sorry, nothing")
             print(*matching_names, sep=" or ")
             guess = input("Is this correct?: ").lower()
-            if guess == "yes"
+            if guess == "yes":
                 print("Sure thing")
         else:
             raise Exception("Sorry, no pokemon has that name")
